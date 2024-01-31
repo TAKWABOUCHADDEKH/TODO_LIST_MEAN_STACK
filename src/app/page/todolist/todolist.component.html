@@ -1,0 +1,13 @@
+<div>
+  <h1>list todo</h1>
+    <a class="btnAdd" routerLink="/todo/form/ajouter">Ajouter</a><hr>
+    <div class="todolist">
+      <div class="todo" *ngFor="let item of todo">
+        <p>
+          {{ item.content }} || {{item.date| date}}
+        </p>
+        <a href="" class="btnEdit" routerLink="/todo/form/modifier/{{item._id}}">modifier</a>
+        <a class="btnDelete"(click)="DeleteTodo(item._id)" >supprimer</a>
+
+    </div>
+</div>

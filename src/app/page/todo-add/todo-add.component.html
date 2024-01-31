@@ -1,0 +1,11 @@
+<div>
+  <h1>Organisez enfin votre vie et votre travail !</h1>
+  <h2> Ajouter une nouvelle tache </h2>
+  
+  <form #addForm="ngForm" (ngSubmit)="AddTodo(addForm)">
+
+    <input name="content" type="text" placeholder="Ecrire votre tache" ngModel required #content="ngModel">
+    <input name="date" type="date" ngModel required #date="ngModel" > 
+    <button type="submit"> Sauvegarder</button>
+  </form>
+</div>

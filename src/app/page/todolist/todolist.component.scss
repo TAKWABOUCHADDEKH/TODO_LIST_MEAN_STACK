@@ -1,0 +1,79 @@
+
+div {
+  text-align: center;
+  margin: 20px;
+
+  h1 {
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .btnAdd {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #4caf50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+    font-size: 18px;
+
+    &:hover {
+      background-color: #45a049;
+    }
+  }
+
+  hr {
+    border: 1px solid #ddd;
+    margin: 20px 0;
+  }
+
+  .todolist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .todo {
+      width: 30%;
+      background-color: #fff;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+      p {
+        margin: 0;
+        font-size: 16px;
+        color: #333;
+      }
+
+      .btnEdit, .btnDelete {
+        display: inline-block;
+        padding: 10px 16px;
+        margin: 10px 5px;
+        text-decoration: none;
+        color: #fff;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background-color 0.3s;
+
+        &.btnEdit {
+          background-color: #007bff;
+        }
+
+        &.btnDelete {
+          background-color: #dc3545;
+        }
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
+

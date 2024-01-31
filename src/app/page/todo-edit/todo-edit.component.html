@@ -1,0 +1,12 @@
+<div>
+  <h1> Modifier todo </h1>
+  
+  <form #editForm="ngForm" (ngSubmit)="EditTodo(editForm)">
+
+    <input name="content" type="text" placeholder="tapper votre todo .." [ngModel]="todo.content" required >
+
+    <input name="date" type="date" [ngModel]="todo.date | date :'yyyy-MM-dd'" required  > 
+
+    <button type="submit"> Modifier</button>
+  </form>
+</div>
